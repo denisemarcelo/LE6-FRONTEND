@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+
+body,html{
+    background:#5b42d1;
+}
+
+.login-container{
+    width: 100%;
+}
+.icon{
+    margin-top: 2em;
+}
+.login-flexbox{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    margin: 0 auto;
+    margin-top:12em;
+    align-items: center;
+    text-align: center;
+
+}
+
+.reg-margin{
+    margin-top:7em;
+}
+.input-box input{
+    background:none;
+    border:2px solid white;
+    padding:1em 4em;
+    margin:1em 0;
+    color:white;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+}
+::placeholder{
+    color: rgb(216, 216, 216);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(216, 216, 216);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(216, 216, 216);
+  }
+
+ .signin-btn{
+    background-color: none;
+    border:none;
+    color:#4a044e;
+    width:100%;
+    padding: 1em 4em;
+    border-radius: 40px;
+    margin:1em 0;
+    font-weight: 600;
+  }
+
+  .reg-btn a{
+    text-decoration: none;
+    color: rgb(178, 178, 178);
+   
+    font-size: 12px;
+  }
+
+
+  .posts-container{
+    width: 100%;
+    margin-top:2em;
+  }
+
+header{
+    width: 100%;
+}
+nav{
+    text-align: center;
+    color:white;
+    box-shadow: 0 0 5px 5px rgb(0,0,0,0.2);
+    padding:1em 0;
+}
+
+.posts-flexbox{
+    
+    max-width: 900px;
+    margin: 0 auto;
+   
+}
+.post-box{
+   
+    margin:0 0;
+    padding:1em;
+    display: flex;
+    position: relative;
+  
+}
+
+.profile{
+    background: white;
+    padding:2em;
+    text-align: center;
+    width: 30%;
+    color:#251a59;
+   
+}
+.context{
+    background: #251a59;
+    padding:1em;
+    width: 70%;
+   
+}
+
+.date{
+    position: absolute;
+    text-align: right;
+   
+    color:white;
+    bottom:2.5em;
+    right:2.5em;
+}
+.context h3 a{
+    color:white;
+    text-decoration: none;
+}
+
+.detail-container{
+    width: 100%;
+}
+
+.context-container{
+    margin: 0 auto;
+    max-width: 1300px;
+    background-color: white;
+    padding:2em;
+    margin:2em auto;
+    box-shadow: 0 0 3px 3px rgb(0,0,0,0.3);
+}
+
+.profile-holder{
+    display: flex;
+    color:#251a59;
+}
+
+.profile-holder p{
+    margin-left: 0.3em;
+}
+
+.title{
+    margin-top:1em;
+}
+.title a{
+    color:#251a59;
+    text-decoration: none;
+  
+}
+
+.body{
+    margin-top:1em;
+}
+
+.detail-date{
+    margin-top:2em;
+    text-align: right;
+}
+
+.logout-btn a{
+    color: white;
+}
+.logout-btn{
+    position: fixed;
+    bottom: 1em;
+    right:1em;
+    background-color: #231a56;
+    color:white;
+    padding:1em;
+    border-radius: 50%;
+    z-index: 2;
+}

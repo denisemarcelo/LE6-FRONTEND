@@ -1,0 +1,61 @@
+
+<div class="login-container">
+
+    <div class="login-flexbox reg-margin">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+            <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+          </svg>
+    
+        <form name = "form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+          
+            <div class ="input-box icon">
+            
+                <input
+                    required
+                    type="text"
+                    name="username"
+                    [(ngModel)]="form.username"
+                    #username="ngModel" placeholder="USERNAME">
+            </div>
+                
+            <div class ="input-box">
+              
+                <input type="password"
+                        name="password"
+                        [(ngModel)]="form.password"
+                        required
+                        #password="ngModel"placeholder="PASSWORD">
+            </div>
+
+            <div class ="input-box">
+                <input
+                type="text"
+                name="firstName"
+                [(ngModel)]="form.firstName"
+                required
+                #firstName="ngModel" placeholder="FIRSTNAME"/>
+               
+            </div>
+
+
+            <div class ="input-box">
+
+                <input
+        type="lastName"
+        name="lastName"
+        [(ngModel)]="form.lastName"
+        required
+        #lastName="ngModel" placeholder="LASTNAME"/>
+               
+            </div>
+
+            <button class="signin-btn">SIGN-UP</button>
+            </form>
+            <p class="reg-btn"> <a href="/">I have an account</a></p>
+    </div>
+</div>
+            
+
+
+
